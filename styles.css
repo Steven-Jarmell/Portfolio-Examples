@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Global CSS */
+* {
+    box-sizing: border-box;
+
+    font-family: 'Open Sans', sans-serif;
+
+    --main-bg-color: #ffffff;
+    --secondary-bg-color: #f8f8f8;
+    --main-text-color: #000000;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+/* Navigation Bar */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: .75rem;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+}
+
+.nav-container__links {
+    display: flex;
+    gap: 1.2rem;
+}
+
+.nav-container__links > li {
+    list-style-type: none;
+}
+
+/* Section Shared CSS */
+
+/* About */
+
+/* Experience */
+
+/* Portfolio */
+
+/* Contact */
+
+/* Footer */
