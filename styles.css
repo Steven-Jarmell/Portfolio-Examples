@@ -9,6 +9,9 @@
     --main-bg-color: #ffffff;
     --secondary-bg-color: rgba(255, 182, 18, 0.4);
     --main-text-color: #000000;
+
+    --pitt-blue: #003594;
+    --pitt-yellow: #FFB81C;
 }
 
 html,
@@ -50,6 +53,7 @@ body {
 .section-container {
     background-color: var(--main-bg-color);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 5rem;
 }
@@ -58,7 +62,18 @@ body {
     background-color: var(--secondary-bg-color);
 }
 
+.section__title {
+    font-size: 2.5rem;
+    font-weight: 550;
+}
+
 /* Home */
+
+.home-section-container {
+    flex-direction: row;
+    margin-top: 3.5rem;
+}
+
 .home__container {
     display: flex;
     gap: 10rem;
@@ -77,7 +92,7 @@ body {
 
 .home__name {
     font-size: 3.75rem;
-    font-weight: 1000;
+    font-weight: bold;
 }
 
 .home__mission-statement {
@@ -108,11 +123,25 @@ body {
     border-radius: 40px;
 }
 
-.home__name-info-container {
-   
+/* About */
+.about-container {
+    max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* About */
+.about__text {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    font-weight: 100;
+}
+
+.about__text-pitt {
+    background: linear-gradient(to right, var(--pitt-blue), var(--pitt-yellow));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
 
 /* Experience */
 
