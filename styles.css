@@ -86,6 +86,7 @@ html, body {
 .home__contact-resource {
     display: flex;
     align-items: center;
+    gap: .25rem;
 }
 
 .home__contact-resource > span {
