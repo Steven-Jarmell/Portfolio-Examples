@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 /* Global CSS */
 * {
     box-sizing: border-box;
 
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 
     --main-bg-color: #ffffff;
-    --secondary-bg-color: rgba(255, 182, 18, .4);
+    --secondary-bg-color: rgba(255, 182, 18, 0.4);
     --main-text-color: #000000;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -26,7 +27,7 @@ html, body {
     max-width: 60vw;
     margin-left: auto;
     margin-right: auto;
-    padding-top: .75rem;
+    padding-top: 0.75rem;
 }
 
 .nav-container a {
@@ -48,7 +49,9 @@ html, body {
 
 .section-container {
     background-color: var(--main-bg-color);
-    padding: 8rem 25rem;
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
 }
 
 .section-container:nth-of-type(even) {
@@ -56,6 +59,11 @@ html, body {
 }
 
 /* Home */
+.home__container {
+    display: flex;
+    gap: 10rem;
+}
+
 .home__icon {
     max-height: 1.5rem;
     max-width: 1.5rem;
@@ -79,30 +87,29 @@ html, body {
 
 .home__contact-container {
     display: flex;
-    margin-top: 4rem;
+    margin-top: 2.5rem;
     gap: 3rem;
 }
 
 .home__contact-resource {
     display: flex;
     align-items: center;
-    gap: .25rem;
+    gap: 0.25rem;
 }
 
 .home__contact-resource > span {
-    font-size: 1.5rem;
-}
-
-.home__container {
-    display: flex;
-    justify-content: center;
-    gap: 10vw;
+    font-size: 1.25rem;
 }
 
 .home__kp-picture {
-    max-width: 50%;
-    max-height: 35vh;
+ 
+    max-height: 22.5rem;
+    width: auto;
     border-radius: 40px;
+}
+
+.home__name-info-container {
+   
 }
 
 /* About */
@@ -116,5 +123,5 @@ html, body {
 /* Footer */
 .footer-container {
     text-align: center;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
 }
