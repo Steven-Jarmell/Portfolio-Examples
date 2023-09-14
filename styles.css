@@ -7,7 +7,7 @@
     font-family: 'Open Sans', sans-serif;
 
     --main-bg-color: #ffffff;
-    --secondary-bg-color: #f8f8f8;
+    --secondary-bg-color: rgba(255, 182, 18, .4);
     --main-text-color: #000000;
 }
 
@@ -23,7 +23,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 70vw;
+    max-width: 60vw;
     margin-left: auto;
     margin-right: auto;
     padding-top: .75rem;
@@ -46,6 +46,64 @@ html, body {
 
 /* Section Shared CSS */
 
+.section-container {
+    background-color: var(--main-bg-color);
+    padding: 8rem 25rem;
+}
+
+.section-container:nth-of-type(even) {
+    background-color: var(--secondary-bg-color);
+}
+
+/* Home */
+.home__icon {
+    max-height: 1.5rem;
+    max-width: 1.5rem;
+}
+
+.home__name-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.home__name {
+    font-size: 3.75rem;
+    font-weight: 1000;
+}
+
+.home__mission-statement {
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
+.home__contact-container {
+    display: flex;
+    margin-top: 4rem;
+    gap: 3rem;
+}
+
+.home__contact-resource {
+    display: flex;
+    align-items: center;
+}
+
+.home__contact-resource > span {
+    font-size: 1.5rem;
+}
+
+.home__container {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+}
+
+.home__kp-picture {
+    max-width: 50%;
+    max-height: 35vh;
+    border-radius: 40px;
+}
+
 /* About */
 
 /* Experience */
@@ -55,3 +113,7 @@ html, body {
 /* Contact */
 
 /* Footer */
+.footer-container {
+    text-align: center;
+    padding-bottom: .5rem;
+}

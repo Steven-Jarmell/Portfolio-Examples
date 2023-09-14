@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css" />
+        <link rel="shortcut icon" href="./assets/favicon.ico" />
         <title>Kenny Pickett | QB1</title>
     </head>
     <body>
@@ -17,34 +18,60 @@
                         <li><a href="#about">About</a></li>
                         <li><a href="#experience">Experience</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="https://en.wikipedia.org/wiki/Kenny_Pickett" target="_blank">Resume</a></li>
+                        <a
+                            href="mailto: kp8@pitt.edu"
+                            target="_blank"
+                            class="link"
+                            >Email</a
+                        >
+                        <li>
+                            <a
+                                href="https://en.wikipedia.org/wiki/Kenny_Pickett"
+                                target="_blank"
+                                >Resume</a
+                            >
+                        </li>
                     </ul>
                 </nav>
             </header>
 
             <section id="home" class="section-container">
-                <!-- Intro  -->
-                <div>
-                    <span>HELLO, MY NAME IS</span>
+                <div class="home__container">
                     <div>
-                        <span>Kenny Pickett</span>
-                        <span>Let's Ball.</span>
-                    </div>
-                    <div>
-                        <div>
-                            <img src="assets/email-logo.webp" class="home-icon"/>
-                            <span>KP8@pitt.edu</span>
+                        <div class="home__name-container">
+                            <span class="home__name">Kenny Pickett</span>
+                            <span class="home__mission-statement"
+                                >Quarterback and Aspiring Software
+                                Engineer</span
+                            >
                         </div>
-                        <div>
-                            <img src="assets/phone-logo.png" class="home-icon"/>
-                            <span>412-100-0101</span>
+                        <div class="home__contact-container">
+                            <div class="home__contact-resource">
+                                <img
+                                    src="./assets/email-logo.webp"
+                                    class="home__icon"
+                                    alt="email icon"
+                                />
+                                <span>KP8@pitt.edu</span>
+                            </div>
+                            <div class="home__contact-resource">
+                                <img
+                                    src="./assets/phone-logo.png"
+                                    class="home__icon"
+                                    alt="phone icon"
+                                />
+                                <span>412-100-0101</span>
+                            </div>
                         </div>
                     </div>
+                    <img
+                        src="./assets/KP.jpg"
+                        class="home__kp-picture"
+                        alt="picture of Kenny Pickett"
+                    />
                 </div>
             </section>
 
-            <!-- About Me  -->
             <section id="about" class="section-container">
                 <span>About me</span>
                 <div>
@@ -68,7 +95,6 @@
                 </div>
             </section>
 
-            <!-- Experience  -->
             <section id="experience" class="section-container">
                 <div>
                     <span>Skills</span>
@@ -126,7 +152,6 @@
                 </div>
             </section>
 
-            <!-- Portfolio -->
             <section id="portfolio" class="section-container">
                 <span>Some of my favorite projects</span>
                 <div>
@@ -161,6 +186,7 @@
                     </p>
                 </div>
             </section>
+
             <section id="contact" class="section-container">
                 <div>
                     <span>Connect with Me</span>
@@ -175,9 +201,8 @@
                     </div>
                 </div>
             </section>
-            <footer id="footer">
-                <div>Made with ❤️</div>
-            </footer>
+
+            <footer class="footer-container">Made with ❤️</footer>
         </main>
     </body>
 </html>
