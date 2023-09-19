@@ -38,18 +38,19 @@ body {
 .nav-container a {
     text-decoration: none;
     color: black;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 .nav-container__links {
     display: flex;
-    gap: 1.2rem;
+    gap: 2.5rem;
 }
 
 .nav-container__links > li {
     list-style-type: none;
 }
 
+.portfolio__project-header,
 .nav-container__link {
     background: linear-gradient(
             to right,
@@ -67,6 +68,7 @@ body {
     transition: background-size 400ms;
 }
 
+.portfolio__project-header:hover,
 .nav-container__link:hover {
     background-size: 0 3px, 100% 3px;
 }
@@ -242,6 +244,7 @@ body {
     gap: 0.5rem;
     text-decoration: none;
     color: black;
+    width: fit-content;
 }
 
 /* Contact */
@@ -287,3 +290,8 @@ body {
     text-align: center;
     padding-bottom: 0.5rem;
 }
+
+/* Media Queries for Phones */
+
+
+/* Media Queries for Tablets */
