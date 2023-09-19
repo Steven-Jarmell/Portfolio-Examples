@@ -139,6 +139,7 @@ body {
 }
 
 /* About */
+
 .about__text {
     font-size: 1.2rem;
     line-height: 2rem;
@@ -149,6 +150,10 @@ body {
     background: linear-gradient(to right, var(--pitt-blue), var(--pitt-yellow));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.about__text-bold {
     font-weight: bold;
 }
 
