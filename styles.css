@@ -6,6 +6,8 @@
 
     font-family: "Open Sans", sans-serif;
 
+    /*scroll-behavior: smooth !important;*/
+
     --main-bg-color: #ffffff;
     --secondary-bg-color: rgba(255, 182, 18, 0.4);
     --main-text-color: #000000;
@@ -67,6 +69,19 @@ body {
     font-weight: 550;
 }
 
+.section__subtitle {
+    font-size: 1.75rem;
+    font-weight: 200;
+}
+
+.experience-container,
+.about-container,
+.portfolio-container {
+    max-width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Home */
 
 .home-section-container {
@@ -117,19 +132,12 @@ body {
 }
 
 .home__kp-picture {
- 
     max-height: 22.5rem;
     width: auto;
     border-radius: 40px;
 }
 
 /* About */
-.about-container {
-    max-width: 60vw;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .about__text {
     font-size: 1.2rem;
     line-height: 2rem;
@@ -144,8 +152,70 @@ body {
 }
 
 /* Experience */
+.experience-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.experience__skills-container {
+    flex: .3;
+}
+
+.experience__experience-container {
+    flex: .7;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.experience__job-title {
+    font-size: 1.4rem;
+}
+
+.experience__job-description {
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+.experience__job-company {
+    font-style: italic;
+}
+
+.experience__skills-section-subtitle {
+    font-size: 1.4rem;
+}
+
+.experience__skills-items-container > li {
+    font-size: 1.2rem;
+}
 
 /* Portfolio */
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.portfolio__project-title {
+    font-size: 1.4rem;
+}
+
+.portfolio__project-description {
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+
+.external-link-icon {
+    height: 1.5rem;
+}
+
+.portfolio__project-header {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    color: black;
+}
 
 /* Contact */
 
