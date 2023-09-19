@@ -50,24 +50,18 @@ body {
     list-style-type: none;
 }
 
+.nav-contact-link,
 .portfolio__project-header,
 .nav-container__link {
-    background: linear-gradient(
-            to right,
-            rgba(0, 0, 0, 0),
-            rgba(0, 0, 0, 0)
-        ),
-        linear-gradient(
-            to right,
-            #101820,
-            #FFB612
-        );
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+        linear-gradient(to right, #101820, #ffb612);
     background-size: 100% 3px, 0 3px;
     background-position: 100% 100%, 0 100%;
     background-repeat: no-repeat;
     transition: background-size 400ms;
 }
 
+.nav-contact-link:hover,
 .portfolio__project-header:hover,
 .nav-container__link:hover {
     background-size: 0 3px, 100% 3px;
@@ -292,6 +286,42 @@ body {
 }
 
 /* Media Queries for Phones */
+@media (max-width: 480px) {
+    .nav-container__link {
+        display: none;
+    }
 
+    .home__kp-picture {
+        display: none;
+    }
+
+    .experience-container {
+        flex-direction: column;
+    }
+
+    .experience-container,
+    .about-container,
+    .portfolio-container,
+    .contact-container {
+        max-width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-container {
+        max-width: 80vw;
+    }
+
+    .contact-container {
+        flex-direction: column;
+    }
+}
 
 /* Media Queries for Tablets */
+@media (max-width: 960px) {
+    body,
+    html {
+        height: 100dvh;
+        width: 100dvw;
+    }
+}
