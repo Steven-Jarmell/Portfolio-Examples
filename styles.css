@@ -338,6 +338,10 @@ body {
         padding-top: 0rem;
     }
 
+    .home__name-container {
+        text-align: center;
+    }
+
     .home__name {
         font-size: 2.5rem;
     }
@@ -353,6 +357,11 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .home__contact-resource {
+        text-decoration: none;
+        color: black;
     }
 
     .section__title {
