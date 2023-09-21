@@ -302,18 +302,81 @@ body {
     .experience-container,
     .about-container,
     .portfolio-container,
+    .nav-container,
     .contact-container {
-        max-width: 80vw;
+        max-width: 100dvw;
         margin-left: auto;
         margin-right: auto;
     }
 
     .nav-container {
-        max-width: 80vw;
+        justify-content: space-evenly;
     }
 
     .contact-container {
         flex-direction: column;
+    }
+
+    .section-container {
+        padding: 2.25rem 2rem;
+    }
+
+    .home-section-container {
+        margin-top: 0rem;
+        padding-top: 0rem;
+    }
+
+    .home__name {
+        font-size: 2.5rem;
+    }
+
+    .home__mission-statement {
+        font-size: .75rem;
+    }
+
+    .home__contact-container {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section__title {
+        font-size: 1.75rem;
+    }
+
+    .about__text {
+        font-size: 1rem;
+    }
+
+    .section__skills-container {
+        margin-top: 1rem;
+        display: flex;
+    }
+
+    .experience__skills-section-subtitle {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .experience__skills-items-container > li {
+        font-size: 1rem;
+    }
+
+    .section__skills-technical-container,
+    .section__skills-soft-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .experience__job-title {
+        font-size: 1.25rem;
+    }
+
+    .portfolio__project-title {
+        font-size: 1.25rem;
     }
 }
 
