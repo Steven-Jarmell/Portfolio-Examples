@@ -155,6 +155,10 @@ body {
     border-radius: 40px;
 }
 
+.home__kp-picture-phone {
+    display: none;
+}
+
 /* About */
 
 .about__text {
@@ -293,6 +297,14 @@ body {
 
     .home__kp-picture {
         display: none;
+    }
+
+    .home__kp-picture-phone {
+        display: inline;
+        height: 16rem;
+        width: 16rem;
+        margin-top: 1rem;
+        border-radius: 30px;
     }
 
     .experience-container {
