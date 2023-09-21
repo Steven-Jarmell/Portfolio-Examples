@@ -340,6 +340,8 @@ body {
 
     .home__name-container {
         text-align: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .home__name {
