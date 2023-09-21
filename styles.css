@@ -289,6 +289,60 @@ body {
     padding-bottom: 0.5rem;
 }
 
+/* Media Queries for Tablets */
+@media (max-width: 960px) {
+    body,
+    html {
+        height: 100dvh;
+        width: 100dvw;
+    }
+
+    .experience-container,
+    .about-container,
+    .portfolio-container,
+    .nav-container,
+    .contact-container {
+        max-width: 100dvw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .nav-container {
+        padding: 0.75rem 5rem;
+    }
+
+    .experience__skills-items-container > li {
+        font-size: 1.2rem;
+    }
+
+    .experience-container {
+        gap: 3rem;
+    }
+
+    .home__container {
+        gap: 0px;
+        justify-content: space-evenly;
+    }
+
+    .home-section-container {
+        margin-top: 0px;
+        padding: 3rem;
+    }
+
+    .home__kp-picture {
+        max-height: 20rem;
+        margin-left: 2rem;
+    }
+
+    .home__name {
+        font-size: 3rem;
+    }
+
+    .home__mission-statement {
+        font-size: .8rem;
+    }
+}
+
 /* Media Queries for Phones */
 @media (max-width: 480px) {
     .nav-container__link {
@@ -390,59 +444,5 @@ body {
 
     .portfolio__project-title {
         font-size: 1.25rem;
-    }
-}
-
-/* Media Queries for Tablets */
-@media (max-width: 960px) {
-    body,
-    html {
-        height: 100dvh;
-        width: 100dvw;
-    }
-
-    .experience-container,
-    .about-container,
-    .portfolio-container,
-    .nav-container,
-    .contact-container {
-        max-width: 100dvw;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .nav-container {
-        padding: 0.75rem 5rem;
-    }
-
-    .experience__skills-items-container > li {
-        font-size: 1.2rem;
-    }
-
-    .experience-container {
-        gap: 3rem;
-    }
-
-    .home__container {
-        gap: 0px;
-        justify-content: space-evenly;
-    }
-
-    .home-section-container {
-        margin-top: 0px;
-        padding: 3rem;
-    }
-
-    .home__kp-picture {
-        max-height: 20rem;
-        margin-left: 2rem;
-    }
-
-    .home__name {
-        font-size: 3rem;
-    }
-
-    .home__mission-statement {
-        font-size: 1rem;
     }
 }
